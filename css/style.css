@@ -2,3 +2,67 @@ main {
     width: 90%;
     margin: auto;
 }
+
+.areacirculo {
+    background-color: #FF9933;
+    color: #FFF;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#raio {
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background-color: #FF9933;
+    color: #FFF;
+}
+
+#raio::placeholder {
+    opacity: 1;
+    color: #FFF;
+}
+
+.areacirculo button {
+    font-weight: 600;
+    color: #FFF;
+    width: 50%;
+    height: 30%;
+}
+
+.areacirculo button:hover {
+    background-color: #FFF;
+    color: #FF9933;
+}
+
+.arearetangulo {
+    background-color: #0099FF;
+    color: #FFF;
+}
+
+#baseretangulo,
+#altretangulo {
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background-color: #0099FF;
+    color: #FFF;
+}
+
+#baseretangulo::placeholder,
+#altretangulo::placeholder {
+    opacity: 1;
+    color: #FFF;
+}
+
+.arearetangulo button {
+    font-weight: 600;
+    color: #FFF;
+    width: 50%;
+    height: 30%;
+}
+
+.arearetangulo button:hover {
+    background-color: #FFF;
+    color: #0099FF;
+}

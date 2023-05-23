@@ -18,26 +18,46 @@
             <h1>Funções JS anteriores reescritas usando input</h1>
         </div>
 
-        <div class="row align-items-end text-center">
-            <div class="col-sm-3" style="height: 150px; border: 1px solid red;">
-                <h2 class="my-auto">Soma de dois números</h2>
+        <div class="row align-items-end text-center areacirculo">
+            <div class="col-sm-3 titulo" style="height: 150px; border: 1px solid red;">
+                <h2 class="my-auto">Área de um círculo</h2>
             </div>
             <div class="col-sm-3" style="height: 150px; border: 1px solid red;">
                 <div>
-                    <input class="my-1 w-100" type="number" id="numero1" placeholder="Informe o primeiro número">
-                </div>
-                <div>
-                    <input class="my-1 w-100" type="number" id="numero2" placeholder="Informe o segundo número">
+                    <input class="my-1 w-100" type="number" id="raio" placeholder="Informe o raio">
                 </div>
             </div>
             <div class="col-sm-3" style="height: 150px; border: 1px solid red;">
-                <button type="button" class="btn btn-outline-primary" onclick="soma2num()">
-                    Soma
+                <button type="button" class="btn btn-outline-light" onclick="areacirc()">
+                    Área
                 </button>
             </div>
             <div class="col-sm-3 text-center" style="height: 150px; border: 1px solid red;">
-                <p class="align-self-center" style="border: 1px solid green;">Resultado: </p>
-                <p class="align-self-center" id="soma" style="border: 1px solid blue;"></p>
+                <p class="align-self-center" style="border: 1px solid green;">Resultado</p>
+                <p class="align-self-center" id="areacir" style="border: 1px solid blue;"></p>
+            </div>
+        </div>
+
+        <div class="row align-items-end text-center arearetangulo">
+            <div class="col-sm-3 titulo" style="height: 150px; border: 1px solid red;">
+                <h2 class="my-auto">Área de um retângulo</h2>
+            </div>
+            <div class="col-sm-3" style="height: 150px; border: 1px solid red;">
+                <div>
+                    <input class="my-1 w-100" type="number" id="baseretangulo" placeholder="Informe a base">
+                </div>
+                <div>
+                    <input class="my-1 w-100" type="number" id="altretangulo" placeholder="Informe a altura">
+                </div>
+            </div>
+            <div class="col-sm-3" style="height: 150px; border: 1px solid red;">
+                <button type="button" class="btn btn-outline-light" onclick="arearet()">
+                    Área
+                </button>
+            </div>
+            <div class="col-sm-3 text-center" style="height: 150px; border: 1px solid red;">
+                <p class="align-self-center" style="border: 1px solid green;">Resultado</p>
+                <p class="align-self-center" id="arearetang" style="border: 1px solid blue;"></p>
             </div>
         </div>
 
