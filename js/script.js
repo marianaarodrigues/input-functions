@@ -41,5 +41,11 @@ function realemdolar() {
     let cotacao = parseFloat(document.getElementById('cotacao').value)
     let real = parseFloat(document.getElementById('reais').value)
     let dolar = real / cotacao
-    document.getElementById('realdolar').innerHTML = resultado
+    document.getElementById('realdolar').innerHTML = dolar
+}
+
+function celsfahr() {
+    let celsius = parseFloat(document.getElementById('celsius').value)
+    let fahrenheit = 1.8 * celsius + 32
+    document.getElementById('celsiusfahr').innerHTML = fahrenheit
 }

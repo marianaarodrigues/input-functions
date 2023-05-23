@@ -188,7 +188,7 @@ main {
 }
 
 .moedas {
-    background-color: #9370DB;
+    background-color: #4682B4;
     color: #FFF;
 }
 
@@ -200,7 +200,7 @@ main {
 #reais {
     border-radius: 5px;
     border: 2px solid #FFF;
-    background-color: #9370DB;
+    background-color: #4682B4;
     color: #FFF;
 }
 
@@ -219,5 +219,38 @@ main {
 
 .moedas button:hover {
     background-color: #FFF;
-    color: #9370DB;
+    color: #4682B4;
+}
+
+.temperatura {
+    background-color: #FF7F50;
+    color: #FFF;
+}
+
+.temperatura div {
+    height: 150px;
+}
+
+#celsius {
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background-color: #FF7F50;
+    color: #FFF;
+}
+
+#celsius::placeholder {
+    opacity: 1;
+    color: #FFF;
+}
+
+.temperatura button {
+    font-weight: 600;
+    color: #FFF;
+    width: 50%;
+    height: 30%;
+}
+
+.temperatura button:hover {
+    background-color: #FFF;
+    color: #FF7F50;
 }
