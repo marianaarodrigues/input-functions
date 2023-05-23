@@ -186,3 +186,38 @@ main {
     background-color: #FFF;
     color: #CC3366;
 }
+
+.moedas {
+    background-color: #9370DB;
+    color: #FFF;
+}
+
+.moedas div {
+    height: 150px;
+}
+
+#cotacao,
+#reais {
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background-color: #9370DB;
+    color: #FFF;
+}
+
+#cotacao::placeholder,
+#reais::placeholder {
+    opacity: 1;
+    color: #FFF;
+}
+
+.moedas button {
+    font-weight: 600;
+    color: #FFF;
+    width: 50%;
+    height: 30%;
+}
+
+.moedas button:hover {
+    background-color: #FFF;
+    color: #9370DB;
+}
