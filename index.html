@@ -15,49 +15,101 @@
 <body>
     <main>
         <div class="row text-center my-3">
-            <h1>Funções JS anteriores reescritas usando input</h1>
+            <h1>Funções JS utilizando input</h1>
         </div>
 
-        <div class="row align-items-end text-center areacirculo">
-            <div class="col-sm-3 titulo" style="height: 150px; border: 1px solid red;">
-                <h2 class="my-auto">Área de um círculo</h2>
+        <div class="row areacirculo">
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <h2>Área de um círculo</h2>
             </div>
-            <div class="col-sm-3" style="height: 150px; border: 1px solid red;">
-                <div>
-                    <input class="my-1 w-100" type="number" id="raio" placeholder="Informe o raio">
-                </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <input class="my-1 w-100" type="number" id="raio" placeholder="Informe o raio">
             </div>
-            <div class="col-sm-3" style="height: 150px; border: 1px solid red;">
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
                 <button type="button" class="btn btn-outline-light" onclick="areacirc()">
                     Área
                 </button>
             </div>
-            <div class="col-sm-3 text-center" style="height: 150px; border: 1px solid red;">
-                <p class="align-self-center" style="border: 1px solid green;">Resultado</p>
-                <p class="align-self-center" id="areacir" style="border: 1px solid blue;"></p>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center resultados">
+                <p class="resultado">Resultado</p>
+                <p class="valor" id="areacir"></p>
             </div>
         </div>
 
-        <div class="row align-items-end text-center arearetangulo">
-            <div class="col-sm-3 titulo" style="height: 150px; border: 1px solid red;">
-                <h2 class="my-auto">Área de um retângulo</h2>
+        <div class="row arearetangulo">
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <h2>Área de um retângulo</h2>
             </div>
-            <div class="col-sm-3" style="height: 150px; border: 1px solid red;">
-                <div>
-                    <input class="my-1 w-100" type="number" id="baseretangulo" placeholder="Informe a base">
-                </div>
-                <div>
-                    <input class="my-1 w-100" type="number" id="altretangulo" placeholder="Informe a altura">
-                </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <input class="my-1 w-100" type="number" id="baseretangulo" placeholder="Informe a base">
+                <input class="my-1 w-100" type="number" id="altretangulo" placeholder="Informe a altura">
             </div>
-            <div class="col-sm-3" style="height: 150px; border: 1px solid red;">
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
                 <button type="button" class="btn btn-outline-light" onclick="arearet()">
                     Área
                 </button>
             </div>
-            <div class="col-sm-3 text-center" style="height: 150px; border: 1px solid red;">
-                <p class="align-self-center" style="border: 1px solid green;">Resultado</p>
-                <p class="align-self-center" id="arearetang" style="border: 1px solid blue;"></p>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <p class="resultado align-self-center">Resultado</p>
+                <p class="valor align-self-center" id="arearetang"></p>
+            </div>
+        </div>
+
+        <div class="row areatriangulo">
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <h2>Área de um triângulo</h2>
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <input class="my-1 w-100" type="number" id="basetriangulo" placeholder="Informe a base">
+                <input class="my-1 w-100" type="number" id="alttriangulo" placeholder="Informe a altura">
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="btn btn-outline-light" onclick="areatri()">
+                    Área
+                </button>
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <p class="resultado align-self-center">Resultado</p>
+                <p class="valor align-self-center" id="areatriang"></p>
+            </div>
+        </div>
+
+        <div class="row hipotenusa">
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-center">Hipotenusa de um triângulo retângulo</h2>
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <input class="my-1 w-100" type="number" id="cateto1" placeholder="Informe o cateto oposto">
+                <input class="my-1 w-100" type="number" id="cateto2" placeholder="Informe o cateto adjacente">
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="btn btn-outline-light" onclick="hipoten()">
+                    Hipotenusa
+                </button>
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <p class="resultado align-self-center">Resultado</p>
+                <p class="valor align-self-center" id="hipot"></p>
+            </div>
+        </div>
+
+        <div class="row bhaskara">
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-center">Raízes de ax² + bx + c</h2>
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <input class="my-1 w-100" type="number" id="valora" placeholder="Informe o valor de a">
+                <input class="my-1 w-100" type="number" id="valorb" placeholder="Informe o valor de b">
+                <input class="my-1 w-100" type="number" id="valorc" placeholder="Informe o valor de c">
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="btn btn-outline-light" onclick="bhaskar()">
+                    Raízes
+                </button>
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <p class="resultado align-self-center">Resultado</p>
+                <p class="valor align-self-center" id="bhask"></p>
             </div>
         </div>
 

@@ -6,10 +6,10 @@ main {
 .areacirculo {
     background-color: #FF9933;
     color: #FFF;
+}
+
+.areacirculo div {
     height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #raio {
@@ -36,9 +36,22 @@ main {
     color: #FF9933;
 }
 
+.resultados {
+    display: inline;
+}
+
+.resultado,
+.valor {
+    font-size: 200%;
+}
+
 .arearetangulo {
     background-color: #0099FF;
     color: #FFF;
+}
+
+.arearetangulo div {
+    height: 150px;
 }
 
 #baseretangulo,
@@ -65,4 +78,111 @@ main {
 .arearetangulo button:hover {
     background-color: #FFF;
     color: #0099FF;
+}
+
+.areatriangulo {
+    background-color: #9966FF;
+    color: #FFF;
+}
+
+.areatriangulo div {
+    height: 150px;
+}
+
+#basetriangulo,
+#alttriangulo {
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background-color: #9966FF;
+    color: #FFF;
+}
+
+#basetriangulo::placeholder,
+#alttriangulo::placeholder {
+    opacity: 1;
+    color: #FFF;
+}
+
+.areatriangulo button {
+    font-weight: 600;
+    color: #FFF;
+    width: 50%;
+    height: 30%;
+}
+
+.areatriangulo button:hover {
+    background-color: #FFF;
+    color: #9966FF;
+}
+
+.hipotenusa {
+    background-color: #009999;
+    color: #FFF;
+}
+
+.hipotenusa div {
+    height: 150px;
+}
+
+#cateto1,
+#cateto2 {
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background-color: #009999;
+    color: #FFF;
+}
+
+#cateto1::placeholder,
+#cateto2::placeholder {
+    opacity: 1;
+    color: #FFF;
+}
+
+.hipotenusa button {
+    font-weight: 600;
+    color: #FFF;
+    width: 50%;
+    height: 30%;
+}
+
+.hipotenusa button:hover {
+    background-color: #FFF;
+    color: #009999;
+}
+
+.bhaskara {
+    background-color: #CC3366;
+    color: #FFF;
+}
+
+.bhaskara div {
+    height: 150px;
+}
+
+#valora,
+#valorb,
+#valorc {
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background-color: #CC3366;
+    color: #FFF;
+}
+
+#valora::placeholder,
+#valorb::placeholder,
+#valorc::placeholder {
+    opacity: 1;
+    color: #FFF;
+}
+
+.bhaskara button {
+    font-weight: 600;
+    color: #FFF;
+    width: 50%;
+    height: 30%;
+}
+
+.bhaskara button:hover {
+    background-color: #FFF;
+    color: #CC3366;
 }
