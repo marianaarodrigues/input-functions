@@ -30,7 +30,7 @@
                     Área
                 </button>
             </div>
-            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center resultados">
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
                 <p class="resultado">Resultado</p>
                 <p class="valor" id="areacir"></p>
             </div>
@@ -137,7 +137,7 @@
                 <h2 class="text-center">Conversão de °C em °F</h2>
             </div>
             <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
-                <input class="my-1 w-100" type="number" id="celsius" placeholder="Informe a temperatura em celsius">
+                <input class="my-1 w-100" type="number" id="celsius" placeholder="Informe a temperatura em Celsius">
             </div>
             <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
                 <button type="button" class="btn btn-outline-light" onclick="celsfahr()">
@@ -150,7 +150,46 @@
             </div>
         </div>
 
+        <div class="row velocidade">
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-center">Conversão de km/h em m/s</h2>
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <input class="my-1 w-100" type="number" id="kmporhora" placeholder="Informe a velocidade em km/h">
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="btn btn-outline-light" onclick="msegundo()">
+                    Conversão
+                </button>
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <p class="resultado align-self-center">Resultado</p>
+                <p class="valor align-self-center" id="velmpors"></p>
+            </div>
+        </div>
+
+        <div class="row media">
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-center">Média aritmética de 3 notas</h2>
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <input class="my-1 w-100" type="number" id="nota1" placeholder="Informe a primeira nota">
+                <input class="my-1 w-100" type="number" id="nota2" placeholder="Informe a segunda nota">
+                <input class="my-1 w-100" type="number" id="nota3" placeholder="Informe a terceira nota">
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <button type="button" class="btn btn-outline-light" onclick="media3notas()">
+                    Média
+                </button>
+            </div>
+            <div class="col-sm-3 d-flex flex-column align-items-center justify-content-center">
+                <p class="resultado align-self-center">Resultado</p>
+                <p class="valor align-self-center" id="medianotas"></p>
+            </div>
+        </div>
+
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

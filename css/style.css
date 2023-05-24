@@ -36,10 +36,6 @@ main {
     color: #FF9933;
 }
 
-.resultados {
-    display: inline;
-}
-
 .resultado,
 .valor {
     font-size: 200%;
@@ -253,4 +249,75 @@ main {
 .temperatura button:hover {
     background-color: #FFF;
     color: #FF7F50;
+}
+
+.velocidade {
+    background-color: #669966;
+    color: #FFF;
+}
+
+.velocidade div {
+    height: 150px;
+}
+
+#kmporhora {
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background-color: #669966;
+    color: #FFF;
+}
+
+#kmporhora::placeholder {
+    opacity: 1;
+    color: #FFF;
+}
+
+.velocidade button {
+    font-weight: 600;
+    color: #FFF;
+    width: 50%;
+    height: 30%;
+}
+
+.velocidade button:hover {
+    background-color: #FFF;
+    color: #669966;
+}
+
+.media {
+    background-color: #9966FF;
+    color: #FFF;
+    margin-bottom: 50px;
+}
+
+.media div {
+    height: 150px;
+}
+
+#nota1,
+#nota2,
+#nota3 {
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    background-color: #9966FF;
+    color: #FFF;
+}
+
+#nota1::placeholder,
+#nota2::placeholder,
+#nota3::placeholder {
+    opacity: 1;
+    color: #FFF;
+}
+
+.media button {
+    font-weight: 600;
+    color: #FFF;
+    width: 50%;
+    height: 30%;
+}
+
+.media button:hover {
+    background-color: #FFF;
+    color: #9966FF;
 }
