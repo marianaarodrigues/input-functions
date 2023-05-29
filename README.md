@@ -1,2 +1,2 @@
 # input-functions
- Funções JS anteriores reescritas usando input
+ Funções JS utilizando input.
